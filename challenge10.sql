@@ -19,5 +19,3 @@ LEFT JOIN film f
 ON i.film_id = f.film_id
 LEFT JOIN staff s ON r.staff_id = s.staff_id
 WHERE p.payment_date IS NULL OR p.amount < f.rental_rate * f.rental_duration AND s.staff_id = 1
-
---SELECT * FROM staff
